@@ -22,3 +22,9 @@
     transform: translateY(-15px);
   }
 }
+
+@media (max-width: 640px) {
+  .cat-row {
+    bottom: -70px;
+  }
+}
