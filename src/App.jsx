@@ -37,7 +37,7 @@ export default function App() {
   }, []);
 
   return (
-    <div className="relative bg-dark text-white min-h-screen flex justify-center px-4 py-10">
+    <div className="relative bg-dark text-white min-h-screen flex justify-center px-4 py-10 overflow-x-hidden">
       <AnimatedBackground />
       <div className="w-full max-w-7xl flex flex-col items-center">
         <Profile />
