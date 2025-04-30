@@ -1,0 +1,27 @@
+.custom-cursor {
+  width: 24px;
+  height: 24px;
+  position: fixed;
+  pointer-events: none;
+  z-index: 9999;
+  transform: translate(-50%, -50%);
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.custom-cursor::after {
+  content: '🍑'; /* 기본 엉덩이 커서 */
+  font-size: 20px;
+}
+
+.custom-cursor.hovering-button::after {
+  content: '💩'; /* 버튼 위에선 똥으로 변신 */
+  font-size: 24px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10000;
+  pointer-events: none;
+}
